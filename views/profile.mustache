@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles.css">
+
+    </head>
+    <body>
+        {{#profileData}}
+        <div class="profileDescription">
+            <span class="avatarSpan">
+                <img class="avatarImage" src="{{avatar}}">
+            </span>
+            <span class="detailsSpan">
+                <h2>{{name}}</h2>
+                | {{#job}}{{.}}{{/job}}{{^job}}<span class="unemployedText">Available for hire</span>{{/job}}
+                {{email}} | {{phone}}
+            </span>
+        </div>
+        <div class="educationSkills">
+            {{#university}}
+            <div class="educationDiv">
+                <span class="educationSkillsLeft">Education</span><span class="educationSkillsRight">{{university}}</span>
+            </div>
+            {{/university}}
+            <div class="skillsDiv">
+                <span class="educationSkillsLeft">Skills</span>
+                <span class="educationSkillsRight">
+                    {{#skills}}
+                        {{.}}<br>
+                    {{/skills}}
+                </span>
+            </div>
+        </div>
+        {{/profileData}}
+    </body>
+</html>

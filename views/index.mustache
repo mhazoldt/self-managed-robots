@@ -1,0 +1,48 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <a href="/">All</a>
+        <a href="/employed">Employed</a>
+        <a href="/unemployed">Unemployed</a>
+        {{^loggedIn}}
+            <a href="/login">login</a>
+            <a href="/register">register</a>
+        {{/loggedIn}}
+        <br />
+        {{#loggedIn}}
+        logged in as {{currentUser}}
+        <form method="post" action="/logout"><button type="submit">logout</button></form>
+        {{/loggedIn}}
+        <ul id="gridList">
+            {{#data}}
+                
+                    <li>
+                        <div>
+                            <img src="{{avatar}}"><br>
+                            <div class="nameText">
+                                <a class="nameText" style="text-decoration: none;" href="/user/{{username}}">
+                                    {{name}}
+                                </a>
+                            </div>
+                            {{#company}}
+                                <span class="employedText">{{job}}, {{.}}</span>
+                            {{/company}}
+                            {{^company}}
+                                <span class="unemployedText">Available for hire</span>
+                            {{/company}}
+                            <br />
+                            {{#editButton}}
+                            <a class="nameText" style="text-decoration: none;" href="/user/edit/{{username}}">
+                                edit
+                            </a>
+                            {{/editButton}}
+                        </div>
+                    </li>
+                                                      
+            {{/data}}
+        </ul>
+    </body>
+</html>

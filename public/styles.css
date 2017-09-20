@@ -1,0 +1,138 @@
+ul {
+  width: 800px;
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0px;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+li {
+  box-sizing: border-box;
+  width: calc(100%/4);
+  /* height: 250px; */
+  /* border: 1px solid blue;  */
+  padding: 5px;
+}
+
+#gridList {
+
+}
+
+
+#gridList > li > div {
+  /* height: 100%; */
+  /* background-color: blue; */
+  border: 1px solid rgb(227, 227, 227);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+
+}
+
+
+#gridList > li > div img {
+  margin-bottom: 10px;
+  border: 0px solid black;
+  margin: 0 auto;
+  display: block;
+  width: 150px;
+}
+
+.nameText {
+  color: rgb(56, 126, 206);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.unemployedText {
+  color: rgb(202, 96, 93);
+}
+
+.profileDescription {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  width: 500px;
+  margin: 0 auto;
+  border: 0px solid red;
+}
+
+.avatarImage {
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  padding: 5px;
+}
+
+.educationSkills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 500px;
+  margin: 0 auto;
+  border: 0px solid red;
+}
+
+.educationSkills span {
+  box-sizing: border-box;
+  border: 0px solid black;
+  margin: 0px;
+}
+
+.educationSkillsLeft {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  width: 35%;
+  box-sizing: border-box;
+  padding: 5px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.educationSkillsRight {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 0px;
+
+}
+
+.avatarSpan {
+  border: 0px solid #CCCCCC;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 35%;
+}
+
+.detailsSpan {
+  border: 0px solid limegreen;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 65%;
+}
+
+.educationDiv {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.skillsDiv {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.employedText {
+  color: rgb(89, 98, 107)
+}

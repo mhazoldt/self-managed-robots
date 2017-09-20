@@ -1,0 +1,57 @@
+<h1>Register</h1>
+    {{#errors}}
+        {{success_msg}}
+        {{error_msg}}
+        {{error}}
+        {{msg}}
+    {{/errors}}
+<form action="/register" method="post">
+
+    <label>Avatar</label><br>
+    <input type="text" name="avatar"><br>
+    <br>
+    <label>Name</label><br>
+    <input type="text" name="name"><br>
+    <br>
+    <label>Username</label><br>
+    <input type="text" name="username"><br>
+    <br>
+    <label>Job</label><br>
+    <input type="text" name="job"><br>
+    <br>
+    <label>Company</label><br>
+    <input type="text" name="company"><br>
+    <br>
+    <label>City</label><br>
+    <input type="text" name="city"><br>
+    <br>
+    <label>Country</label><br>
+    <input type="text" name="country"><br>
+    <br>
+    <label>Email</label><br>
+    <input type="email" name="email"><br>
+    <br>
+    <label>Phone</label><br>
+    <input type="text" name="phone"><br>
+    <br>
+    <label>Education</label><br>
+    <input type="text" name="university"><br>
+    <br>
+    <label>Skill 1</label><br>
+    <input type="text" name="skill1"><br>
+    <br>
+    <label>Skill 2</label><br>
+    <input type="text" name="skill2"><br>
+    <br>
+    <label>Skill 3</label><br>
+    <input type="text" name="skill3"><br>
+    <br>
+    <label>Password</label><br>
+    <input type="password" name="password"><br>
+    <br>
+    <label>Confirm Password</label><br>
+    <input type="password" name="password2"><br>
+    <br>
+    <button type="submit">Submit</button>
+
+</form>
